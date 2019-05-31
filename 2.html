@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Avigail Vantu</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- mapbox -->
+  <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' /> -->
+
+  <style>
+  body {
+    padding-bottom: 60px;
+  }
+
+  iframe {
+    border: none;
+    /* margin: auto; */
+  }
+
+
+  body * {
+     -webkit-touch-callout: none;
+       -webkit-user-select: none;
+          -moz-user-select: none;
+           -ms-user-select: none;
+               user-select: none;
+  }
+
+  .map {
+      position: absolute;
+      top: 75px;
+      width: 100%;
+      bottom: 0;
+  }
+
+  .legend {
+    display: block;
+    height: 75px;
+    margin: 15px 0;
+
+  }
+  .arrows {
+    display: block;
+
+    height: 160px;
+
+
+  }
+
+  /* #before {
+    position: relative;
+  }
+
+  #after {
+    position: relative;
+  } */
+  /* header .masthead !important {
+    margin-bottom: 0;
+  } */
+
+
+
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <style media="screen">
+    /* .masthead {
+      height: 75px;
+    } */
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">avigailvantu@gmail.com</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About & Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Conferences & media</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+
+    <header class="masthead" style="background-image: url('img/nyc.JPEG')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>15 years of racial segregation in NYC</h1>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Mapbox HTML -->
+
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <p>
+            Using the US Census and ACS census tract level race data,
+            I attempted to capture how the racial composition of NYC has changed in the past 15 years (2000 to 2015).
+            In these maps, each dot = 50 people in a given census tract. The map on the left represents the year 2000,
+            and the map on the right side represents the year 2015.
+           </p>
+
+
+          <img class="legend"  src="img/legend.png" alt="">
+
+
+
+
+          <iframe src="segmapbox.html" width="100%" height="500px">
+
+
+          </iframe>
+            <img class="arrows"  src="img/arrows.png" alt="">
+
+
+          <p> * Note: there may be some missing values since I merged census tract 2010 with 2000 data.
+             </p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+  <!-- Mapbox JS -->
+  <!-- <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXZpZ2FpbHZhbnR1IiwiYSI6ImNqdDBmY2lpNDAydzA0OW9oeWdzOWp4d3oifQ.M8BP6iG5BdJuvGf-9fItEQ';
+    var beforeMap = new mapboxgl.Map({
+        container: 'before',
+        style: 'mapbox://styles/avigailvantu/cjw8kgv4c5qt61cnwmmp0wnb7',
+        center: [0, 0],
+        zoom: 0
+    });
+
+    var afterMap = new mapboxgl.Map({
+        container: 'after',
+        style: 'mapbox://styles/avigailvantu/cjvv3zj1w3v061cpeoelgoa31',
+        center: [0, 0],
+        zoom: 0
+    });
+
+    var map = new mapboxgl.Compare(beforeMap, afterMap, {
+
+    });
+  </script> -->
+</body>
+
+</html>

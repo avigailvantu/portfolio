@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Avigail Vantu</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <style>
+  body {
+    padding-bottom: 90px;
+  }
+  </style>
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">avigailvantu@gmail.com</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About & Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Conferences & media</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/TotalDemoPerNighDetroit.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Open Demolition</h1>
+            <h2 class="subheading">Open data workshop on Detroit's housing demolition policy</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>
+            In recent decades, Detroit has greatly suffered from population shrinkage and,
+            consequently, many housing vacancies. This has had a profound impact on the public
+            health and quality of life in the city’s neighborhoods. In 2014, Detroit launched
+            a program to use public funding to demolish vacant houses and has since demolished
+            >14,000 properties. The assumption behind this policy, is that houses surrounding
+            demolition sites are likely to see decreases in crime and increases property value
+            (estimated 4%). At the same time, many Detroiters have raised concerns that the
+            implementation of this plan is being carried out too hastily; without proper
+            consideration for how to identify and safely demolish homes built with hazardous
+            materials and without adequate care for the preservation of Detroit’s distinct
+            character and history. Furthermore, the demolition efforts require substantial
+            public funding, which could be designated for improving homes rather than
+            tearing them down.
+          </p>
+
+          <p>
+            In this hands-on workshop I co-led with Eitan Akman, participants from the
+            urban planning and urban design fields had the opportunity to reduce data maps
+            and quantify how demolition policies have impacted Detroit’s public spaces and
+            its perception. Through data visualizations and analysis of important urban
+            variables in Detroit neighborhoods, participants gained an interesting
+            perspective on some of the complex questions surrounding Detroit’s
+            demolition program.
+          </p>
+
+          <p>
+            In this workshop, held at the Public X Design conference in Detroit,
+            we gave participants personalized <a href="https://jupyter.org/">Jupyter Notebooks</a>
+            so they could perform their own data analysis in their web browsers using Python code.
+            The workshop was a walk-through of Python basics as well
+            as an introduction to open data analysis and visualizations. The
+            workshop focused on attempting to understand the impact of
+            the housing demolition policy in Detroit by accounting for demolitions,
+            crime, and real-estate prices in all of Detroit’s neighborhoods.
+          </p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/jupyter_screenshot.jpg" alt="">
+          </a>
+
+          <p>
+            If you would likg to learn more about our workshop, you can check out the full notebook which is
+            available on
+            <a href="https://github.com/avigailvantu/Open-Demolitions/blob/master/data:analysis/combined_notebook.ipynb">
+              Github
+            </a>.
+            Throughout the workshop we learned how to compare different geographical
+            units, such as neighborhoods, by stratifying and working with the percentage
+            changes instead of absolute numbers. Our three main datasets were: demolitions
+            in Detroit from 2014-2018, real estate prices changes between 2013 and 2017,
+            and crime changes between 2013 and 2017.
+          </p>
+
+          <h2 class="section-heading">Conclusions</h2>
+          <a href="#">
+            <img class="img-fluid" src="img/crime_demo.jpg" alt="">
+          </a>
+
+          <p>
+            First we analyzed the neighborhoods where the biggest number of
+            demolitions occurred taking note of the variation in pricing among the different
+            demolition contracts. Later we looked into how the trends in demolitions
+            match real estate and crime trends throughout the period of time
+            when the policy was widely implemented. We found that although
+            crime rates have overall declined from 2013 to 2017, they do not
+            seem to align with the demolition trends among Detroits neighborhoods.
+            As for real estate trends, it seems like there is a negative relationship
+            between demolition and real estate percentage change. Meaning that low
+            (standardized) demolitions in a certain neighborhood may be a predictor
+            of a spike in real estate prices between 2013 to 2017 studies period.
+          </p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/real-estate_demo.jpg" alt="">
+          </a>
+
+
+          <p>
+            * It is important to note that we didn’t investigate causation between
+            these two variables, and that there may be other reasons for this
+            reversed relationship. For example, areas with low numbers of demolitions
+            may be an indication of higher socio-economic populations, or more
+            central areas, with overall more demand for housing.
+          </p>
+          <p> Here's us just after the workshop :) </p>
+          <a href="#">
+            <img class="img-fluid" src="img/detroit2.JPG" alt=""width="300" height="100"></a>
+
+
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+
+
+                </span>
+              </a>
+            </li>
+          </ul>
+
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
