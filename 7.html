@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Avigail Vantu</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">avigailvantu@gmail.com</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About & Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Conferences & media</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/covidbackground.png')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Could Some Areas of NYC be Under-Tested for COVID-19?</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <p>
+          As more and more cases from COVID-19 are reported by the thousands, testing kits in New York City are still limited and hard to come by.
+          Given that New York City is in the midst of its most challenging time in this epidemic, it is important to be able to allocate these
+          limited tests in the most efficient and strategic manner.
+          Unfortunately at this time the best way to detect new clusters is to test in large quantities.
+          Distributing tests wisely could maximize detection in the city’s epicenters and will decrease future cases.
+          </p>
+
+          <p>
+          South Korea and other countries applied aggressive testing early on.
+          Consequently, these countries were able to (at least temporarily) curb the spread of the virus.
+          NYC should be testing as many people as possible, but given limited resources, it should focus on its hardest hit areas.
+          Additionally, almost 40 days into the first confirmed case in NYC, we have more data coming every day
+          that can assist on applying new strategies going forward.
+          </p>
+
+          <p>
+          Working with the NYC Department of Health and Mental Hygiene data on testing in each of City’s zip codes,
+          some interesting trends can be revealed.
+          I acquired the DOHMH data on daily coronavirus testing on April 8th. This data shows how not only the number
+          of confirmed cases, but also the percentage of positive tests, vary drastically from zip code to zip code.
+          </p>
+
+          <p>
+            As of April 8th, the number of positive cases ranged from as low as 8 to as high as 1,728 per zip code.
+            These absolute numbers on their own do not tell the entire story as zip codes vary in their size and land use.
+            For example, the smallest number of positive tests was recorded in zip code 10006, which is one of NYC smallest
+            zip codes in terms of number of residents (only 4,581 based on the 2010 census). Having said that, these absolute
+            numbers can help detect local epicenters and assist the City and state response.
+          </p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/positive_8.png" alt=""width="800" height="600">
+          </a>
+
+        <p>
+        These are the top 5 zip codes with the largest number of people testing positive as of April 8th:
+        <li> Zip code 11368 had a total of 1728 positive tests (Corona Queens) </li>
+        <li> Zip code 11219 had  a total of 1417 positive tests  (Brough Park Brooklyn)</li>
+        <li> Zip code 10467 had a total of 1209 positive tests (Norwood Bronx)</li>
+        <li> Zip code 11373 had a total of 1190 positive tests (Elmhurst Queens)</li>
+        <li> Zip  code 11230 had a total of 1089 positive tests (Midwood)</li>
+        </p>
+
+
+        <p>
+        The positive testing percentage is calculated as the number of people testing positive divided by the number
+        of total people tested and multiplied by 100 so the final value is a percentage. Drawing from these percentages
+        we are able to better understand some of the current clusters. The below map, illustrates this further.
+        This graduated map shows the highest percentages of positive testing in a darker shade of red. Areas with
+        low percentages of positive testing appear in light shades of orange. Clearly, different areas have very
+        different ratios of positive tests to absolute tests. In particular, 10006, 10005, and 10017 are among the
+        lowest in terms of the positive testing percentages with 22%, 31%, and 34% respectively. In zip code 10017
+        for example, out of 217 tests only 74 came back positive. In contradiction, 11372, 11369 and, 11368 are all
+        among the top five highest positive testing percentages with 72%, 74% and as high as 77% respectively.
+        To put actual numbers into these percentages, in zip code 11368 in Corona, Queens the most affected area in the city,
+        1,728 tests out of a total of 2,231 came back positive. This means that for each person who tested negative in Corona,
+        almost 4 people tested positive.
+        </p>
+
+        <a href="#">
+          <img class="img-fluid" src="img/percentage_8.png" alt=""width="800" height="600">
+        </a>
+
+        <p>
+        These huge differences in positive testing ratios are suspicious.
+        If testing resources are distributed equally across the city’s zip codes,
+        why then do these ratios vary so greatly? Are low percentages of positive test cases an indication that
+        people in those areas are more likely to seek testing?
+        Do high percentages indicate that people are less likely to seek testing and only do so as a last resort?
+        </p>
+
+        <p>
+        At this point it is hard to know exactly why we are seeing these variations in the percentage of
+        positive testings. The ability to seek testing could depend on many factors like awareness of the
+        symptoms of the virus, healthcare coverage, and other social and economic issues. And while the
+        causation is yet to be revealed, the fact that Manhattan is seeing much smaller percentages of positive
+        testing in comparison to areas in inner Queens and Brooklyn is very disturbing.
+        </p>
+
+        <p>
+        If we assume that people from all over the city have an equal access to COVID-19 testing,
+        then the fact that one area’s ratio is higher could be an indication that there are more people
+        infected with the virus in this area. That on its own should lead to increased testing as a tool
+        to curb the infections.
+        </p>
+
+
+        <p>
+        But if the access to testing is not equally distributing then this could be due to multiple reasons.
+        One reason could be that people may be seeking testing using different set of judgment than others.
+        So that they choose to don’t get tested, unless they believe their lives are in immediate danger (in some
+        cases these people may be seeking help then it's already too late).
+        Another reason for these different percentages of positive testings could be that people from lower
+        income areas are more reluctant to get tested due to fear of high costs of hospitalization, especially
+        if they lack adequate health insurance. Another reason could be that people from lower income neighborhoods
+        may have already been in financial distress prior to the economic fallout caused by the pandemic.
+        Furthermore, many of them are working in the service industry have possibly lost their jobs. These factors can end up
+        leading to prioritizing worries about how to afford food or rent rather than health conditions.
+        </p>
+
+
+        <p>
+        The bottom line is that no matter what is the reason for these different rates of positive testing, the areas with highest rates
+        should be targeted as soon as possible. Residents of these areas should be given transparent and accurate
+        information on who should seek testing and where these can be accessed entirely for free.
+        This information should be available in multiple languages and distributed in the most low-tech medium (e.g. flyers).
+        </p>
+
+        <p>
+        In my opinion, in the very least, the city and the state should actively seek to increase
+        testing ASAP in the following areas:
+        - Corona and East Elmhurst, Jackson Heights, Queens Village and Cambria Heights in Queens.
+        - Midwood and Borough Park in Brooklyn.
+        - Norwood in the Bronx.
+        </p>
+
+        <p>
+        Early and widespread testing may save the lives of those who are sick and are not currently seeking help.
+        Furthermore, early testing will reduce contamination and kickstart recovery in the City’s most overwhelmed areas.
+        </p>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+
+
+
+              </a>
+            </li>
+          </ul>
+
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
